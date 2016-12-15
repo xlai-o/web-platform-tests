@@ -27,8 +27,8 @@
       },"Input URL has credentials");
 
       test(function() {
-        assert_throws(new TypeError() , function() { new Request("", {"mode" : "navigate"}); },
-          "Expect TypeError exception");
+        var req = new Request("", {"mode" : "navigate"});
+        assert_equals(req.mode, "same-origin", "navigate mode in initializer should become same-origin");
       },"RequestInit's mode is navigate");
 
       test(function() {
@@ -37,8 +37,8 @@
       },"RequestInit's referrer is invalid");
 
       test(function() {
-        assert_throws(new TypeError() , function() { new Request("", {"referrer" : "http://test.url"}); },
-          "Expect TypeError exception");
+        var req = new Request("", {"referrer" : "http://test.url"});
+        assert_equals(req.referrer, "about:client", "cross-origin referrer should become client referrer");
       },"RequestInit's referrer has invalid origin")
 
       test(function() {
