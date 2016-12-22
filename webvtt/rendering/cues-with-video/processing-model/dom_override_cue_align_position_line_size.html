@@ -27,7 +27,7 @@ body { margin:0 }
         v.onplaying = function() {
             this.onplaying = null;
             this.pause();
-            takeScreenshot();
+            takeScreenshotDelayed(1000);
         };
         v.play();
     }

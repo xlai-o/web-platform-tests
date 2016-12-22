@@ -16,7 +16,7 @@ body { margin:0 }
         var t = document.getElementById('track');
         var c = t.track.cues[0];
         c.text = 'f o o';
-        takeScreenshot();
+        takeScreenshotDelayed(1000);
     }
 </script>
 <video id="video" width="320" height="180" autoplay onplaying="this.onplaying = null; this.pause(); updateCue();">
