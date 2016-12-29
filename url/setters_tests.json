@@ -591,6 +591,16 @@
                 "hostname": "example.com",
                 "port": ""
             }
+        },
+        {
+            "href": "file://y/",
+            "new_value": "x:123",
+            "expected": {
+                "href": "file://x/",
+                "host": "x",
+                "hostname": "x",
+                "port": ""
+            }
         }
     ],
     "hostname": [
