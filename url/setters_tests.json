@@ -757,6 +757,16 @@
                 "hostname": "example.net",
                 "port": ""
             }
+        },
+        {
+            "href": "file://y/",
+            "new_value": "x:123",
+            "expected": {
+                "href": "file://x/",
+                "host": "x",
+                "hostname": "x",
+                "port": ""
+            }
         }
     ],
     "port": [
