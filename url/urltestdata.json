@@ -4298,19 +4298,29 @@
     "hash": "#x"
   },
   {
-    "input": "sc://\u0000\u001F !\"$%&'()*+,-.;<=>^_`{|}~",
+    "input": "sc://\u001F!\"$%&'()*+,-.;<=>^_`{|}~",
     "base": "about:blank",
-    "href": "sc://%00%1F !\"$%&'()*+,-.;<=>^_`{|}~",
+    "href": "sc://%1F!\"$%&'()*+,-.;<=>^_`{|}~",
     "origin": "null",
     "protocol": "sc:",
     "username": "",
     "password": "",
-    "host": "%00%1F !\"$%&'()*+,-.;<=>^_`{|}~",
-    "hostname": "%00%1F !\"$%&'()*+,-.;<=>^_`{|}~",
+    "host": "%1F!\"$%&'()*+,-.;<=>^_`{|}~",
+    "hostname": "%1F!\"$%&'()*+,-.;<=>^_`{|}~",
     "port": "",
     "pathname": "",
     "search": "",
     "hash": ""
+  },
+  {
+    "input": "sc://\u0000/",
+    "base": "about:blank",
+    "failure": true
+  },
+  {
+    "input": "sc:// /",
+    "base": "about:blank",
+    "failure": true
   },
   {
     "input": "x",

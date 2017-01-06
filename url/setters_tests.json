@@ -357,6 +357,79 @@
     ],
     "host": [
         {
+            "comment": "Non-special scheme",
+            "href": "sc://x",
+            "new_value": "\u0000",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "\u0009",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "\u000A",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "\u000D",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": " ",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "#",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "/",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "?",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
             "comment": "Cannot-be-a-base means no host",
             "href": "mailto:me@example.net",
             "new_value": "example.com",
@@ -644,6 +717,79 @@
         }
     ],
     "hostname": [
+        {
+            "comment": "Non-special scheme",
+            "href": "sc://x",
+            "new_value": "\u0000",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "\u0009",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "\u000A",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "\u000D",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": " ",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "#",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "/",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
+        {
+            "href": "sc://x",
+            "new_value": "?",
+            "expected": {
+                "href": "sc://x",
+                "host": "x",
+                "hostname": "x"
+            }
+        },
         {
             "comment": "Cannot-be-a-base means no host",
             "href": "mailto:me@example.net",
