@@ -4323,6 +4323,26 @@
     "failure": true
   },
   {
+    "input": "sc://@/",
+    "base": "about:blank",
+    "failure": true
+  },
+  {
+    "input": "sc://te@s:t@/",
+    "base": "about:blank",
+    "failure": true
+  },
+  {
+    "input": "sc://:/",
+    "base": "about:blank",
+    "failure": true
+  },
+  {
+    "input": "sc://:12/",
+    "base": "about:blank",
+    "failure": true
+  },
+  {
     "input": "x",
     "base": "sc://ñ",
     "href": "sc://%C3%B1/x",
@@ -4754,6 +4774,45 @@
     "base": "file:///",
     "href": "file:///",
     "protocol": "file:",
+    "username": "",
+    "password": "",
+    "host": "",
+    "hostname": "",
+    "port": "",
+    "pathname": "/",
+    "search": "",
+    "hash": ""
+  },
+  "# empty host",
+  {
+    "input": "http://?",
+    "base": "about:blank",
+    "failure": "true"
+  },
+  {
+    "input": "http://#",
+    "base": "about:blank",
+    "failure": "true"
+  },
+  {
+    "input": "sc://?",
+    "base": "about:blank",
+    "href": "sc:///?",
+    "protocol": "sc:",
+    "username": "",
+    "password": "",
+    "host": "",
+    "hostname": "",
+    "port": "",
+    "pathname": "/",
+    "search": "",
+    "hash": ""
+  },
+  {
+    "input": "sc://#",
+    "base": "about:blank",
+    "href": "sc:///#",
+    "protocol": "sc:",
     "username": "",
     "password": "",
     "host": "",
