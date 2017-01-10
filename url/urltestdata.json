@@ -553,7 +553,7 @@
   {
     "input": "foo://",
     "base": "http://example.org/foo/bar",
-    "href": "foo:///",
+    "href": "foo://",
     "origin": "null",
     "protocol": "foo:",
     "username": "",
@@ -561,7 +561,7 @@
     "host": "",
     "hostname": "",
     "port": "",
-    "pathname": "/",
+    "pathname": "",
     "search": "",
     "hash": ""
   },
@@ -4360,7 +4360,7 @@
   {
     "input": "#x",
     "base": "sc://ñ",
-    "href": "sc://%C3%B1/#x",
+    "href": "sc://%C3%B1#x",
     "origin": "null",
     "protocol": "sc:",
     "username": "",
@@ -4368,14 +4368,14 @@
     "host": "%C3%B1",
     "hostname": "%C3%B1",
     "port": "",
-    "pathname": "/",
+    "pathname": "",
     "search": "",
     "hash": "#x"
   },
   {
     "input": "?x",
     "base": "sc://ñ",
-    "href": "sc://%C3%B1/?x",
+    "href": "sc://%C3%B1?x",
     "origin": "null",
     "protocol": "sc:",
     "username": "",
@@ -4383,7 +4383,7 @@
     "host": "%C3%B1",
     "hostname": "%C3%B1",
     "port": "",
-    "pathname": "/",
+    "pathname": "",
     "search": "?x",
     "hash": ""
   },
@@ -4797,28 +4797,28 @@
   {
     "input": "sc://?",
     "base": "about:blank",
-    "href": "sc:///?",
+    "href": "sc://?",
     "protocol": "sc:",
     "username": "",
     "password": "",
     "host": "",
     "hostname": "",
     "port": "",
-    "pathname": "/",
+    "pathname": "",
     "search": "",
     "hash": ""
   },
   {
     "input": "sc://#",
     "base": "about:blank",
-    "href": "sc:///#",
+    "href": "sc://#",
     "protocol": "sc:",
     "username": "",
     "password": "",
     "host": "",
     "hostname": "",
     "port": "",
-    "pathname": "/",
+    "pathname": "",
     "search": "",
     "hash": ""
   }
